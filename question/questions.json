@@ -1,0 +1,46 @@
+[
+    {
+      "description": "請問泥是禮拜幾來偶家吃便當?\n(a)禮拜五\n(b)禮拜六\n(c)禮拜天\n",
+      "answer": "b"
+    },
+    {
+      "description": "請問我們從吃便當後多久在一起?\n(a)3天\n(b)5天\n(c)7天\n",
+      "answer": "c"
+    },
+    {
+      "description": "請問泥寶貝的生日是幾月幾號?\n(a)11月24\n(b)11月25\n(c)11月26\n",
+      "answer": "a"
+    },
+    {
+      "description": "請問第一次去旅是哪個地方?\n(a)西門\n(b)市政府\n(c)中山\n",
+      "answer": "a"
+    },
+    {
+      "description": "請問泥寶貝的星座?\n(a)射手\n(b)天蠍\n(c)牡羊\n",
+      "answer": "a"
+    },
+    {
+      "description": "請問我們是因為什麼東西認識的?\n(a)鑰使\n(b)錢包\n(c)耳機\n",
+      "answer": "a"
+    },
+    {
+      "description": "請問泥最喜歡偶的哪裡\n(a)手指\n(b)舌頭\n(c)下面\n(d)全部",
+      "answer": "d"
+    },
+    {
+      "description": "請問我們平均多久見面一次?\n(a)一個禮拜\n(b)兩個禮拜\n(c)一個月\n",
+      "answer": "c"
+    },
+    {
+      "description": "請問第一張拍貼我帶什麼顏色的墨鏡?\n(a)白色\n(b)黑色\n(c)灰色\n",
+      "answer": "b"
+    },
+    {
+      "description": "請問泥寶貝最喜歡跟泥說什麼?\n(a)愛泥\n(b)好想跟泥啾啾\n(c)差不多要睡了呢\n",
+      "answer": "c"
+    },
+    {
+      "description": "請問泥北鼻最喜歡聽泥說甚麼?\n(a)卡要幾張都給泥\n(b)啾啾20個\n(c)啾啾3分鐘\n(d)時間++\n",
+      "answer": "a"
+    }
+  ]
