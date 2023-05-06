@@ -52,7 +52,7 @@ def backup_file(src, aim):
     # 取得來源路徑的所有檔案路徑
     for dir_path, dir_names, file_name in os.walk(src):
         # 取得路徑的資料夾名稱
-        folder_name=dir_path.replace(args["src"], "")
+        folder_name=dir_path.replace(src, "")
         if folder_name!="": # 如果有資料夾
             # 合併目標路徑與資料夾名稱
             aim_path=rf"{aim}{folder_name}"
@@ -117,3 +117,4 @@ def str_concatenated(self_introduction, *args, seq):
     # 用 seq 串接字串
     result=f"next: {self_introduction} {seq.join(args)}"
     return result
+
