@@ -117,4 +117,5 @@ def str_concatenated(self_introduction, *args, seq):
     # 用 seq 串接字串
     result=f"next: {self_introduction} {seq.join(args)}"
     return result
-
+args=getArgs()
+backup_file(args["src"], args["aim"])
