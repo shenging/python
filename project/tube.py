@@ -25,18 +25,9 @@ def main():
     # 解析參數
     args=parser.parse_args()
     # 建立 youtube 物件，呼叫進度條函式
-    yt=pytube.YouTube(args.url, on_progress_callback=onProgress)
+    yt=pytube.YouTube(args.url)
     # 下載影片函式
     download_video(yt, args)
-# 進度條 (無法下載中讀取)
-def onProgress(stream, chunk, bytes_remaining):
-    # chunk 更改為 1mb (github 的方法)
-    pytube.request.default_range_size=8
-    # 檔案大小
-    file_total=stream.filesize
-    # 下載進度數字
-    progress_number=round((file_total-bytes_remaining)/file_total*100, 2)
-    print(f"下載中...{progress_number}%")
 # 下載影片
 def download_video(yt, args):
     if args.sd: # 選擇一般畫質
@@ -45,6 +36,8 @@ def download_video(yt, args):
         target=yt.streams.filter(type="video", resolution="720p").first()
     elif args.fhd: # 選擇高清畫質
         target=yt.streams.filter(type="video", resolution="1080p").first()
+    else:
+        target=None
     # 下載影片
     if target: # 如果有此畫質
         target.download(output_path=pytube_folder())
