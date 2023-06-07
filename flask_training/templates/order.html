@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>訂單</title>
+    </head>
+    <body>
+        <h3>奶茶訂單</h3>
+        <form action="/order" method="POST">
+            <label for="user">姓名:</label><input type="text" name="user">
+            <p>
+                <legend>甜度</legend>
+                <label><input type="radio" name="sugar" value="normal">正常</label>
+                <label><input type="radio" name="sugar" value="half">半糖</label>
+                <label><input type="radio" name="sugar" value="micro">微糖</label>
+                <label><input type="radio" name="sugar" value="none">無糖</label>
+            </p>
+            <p>
+                <legend>配料</legend>
+                <label><input type="checkbox" name="mix" value="百香果">百香果</label>
+                <label><input type="checkbox" name="mix" value="荔枝">荔枝</label>
+                <label><input type="checkbox" name="mix" value="芋頭">芋頭</label>
+                <label><input type="checkbox" name="mix" value="芒果">芒果</label>
+            </p>
+            <p>
+                <label for="area">區域:</label>
+                <select name="area" id="area">
+                    <option value="北區">北區</option>
+                    <option value="北區">中區</option>
+                    <option value="北區">南區</option>
+                    <option value="西區" selected>西區</option>
+                </select>
+            </p>
+            <input type="reset" value="重設">
+            <input type="submit" value="送出">
+        </form>
+    </body>
+</html>
