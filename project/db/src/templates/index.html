@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>留言板首頁</title>
+    </head>
+    <body>
+        <p>目前留言人數: {{books|length}}</p>
+        {% for b in books %}
+            <table width="350" class="msgBox">
+                <tr>
+                    <td width="75" valign="top">
+                        <img width="75" height="75" src="icons\{{b.icon}}">
+                    </td>
+                    <td valign="top">{{b.message|nl2br}}</td>
+                <tr>
+                    <td colspan="2" align="right"></td>
+                    By {{b.name}} @ {{b.post_date|datetimefilter}}
+                </tr>
+                </tr>
+            </table>
+        {% endfor %}
+    </body>
+</html>
